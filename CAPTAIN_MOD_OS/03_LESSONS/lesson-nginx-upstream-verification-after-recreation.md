@@ -49,7 +49,7 @@ What: After container recreation, verify nginx upstream targets match new contai
 | Reuse | 7.0 / 20 |
 | Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T16:07:25.730372+00:00 |
+| Updated | 2026-06-11T16:12:06.396989+00:00 |
 
 ## Source
 

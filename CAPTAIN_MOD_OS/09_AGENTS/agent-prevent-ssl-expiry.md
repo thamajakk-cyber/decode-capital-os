@@ -7,7 +7,7 @@ memory_type: constraint
 key: prevent-ssl-expiry
 created: 2026-06-11T16:07:40.999811+00:00
 updated: 2026-06-11T16:07:40.999811+00:00
-quality_score: 0
+quality_score: 49.0
 quality_grade: F
 ---
 
@@ -38,13 +38,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **0** / 100 (F) |
-| Evidence | 0 / 20 |
-| Impact | 0 / 20 |
-| Reuse | 0 / 20 |
-| Confidence | 0 / 20 |
-| Actionability | 0 / 20 |
-| Updated | None |
+| Total | **49.0** / 100 (F) |
+| Evidence | 7.0 / 20 |
+| Impact | 16 / 20 |
+| Reuse | 6.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 6.0 / 20 |
+| Updated | 2026-06-11T16:12:06.413014+00:00 |
 
 ## Source
 

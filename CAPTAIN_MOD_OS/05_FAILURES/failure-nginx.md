@@ -61,7 +61,7 @@ After container recreation, verify nginx upstream targets match new container po
 | Reuse | 15.0 / 20 |
 | Confidence | 8.0 / 20 |
 | Actionability | 17.0 / 20 |
-| Updated | 2026-06-11T16:07:25.726647+00:00 |
+| Updated | 2026-06-11T16:12:06.392972+00:00 |
 
 ## Source
 

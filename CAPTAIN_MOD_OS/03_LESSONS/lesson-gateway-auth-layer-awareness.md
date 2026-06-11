@@ -49,7 +49,7 @@ What: Always authenticate through gateway API_SERVER_KEY when making provider re
 | Reuse | 7.0 / 20 |
 | Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T16:07:25.729848+00:00 |
+| Updated | 2026-06-11T16:12:06.396438+00:00 |
 
 ## Source
 

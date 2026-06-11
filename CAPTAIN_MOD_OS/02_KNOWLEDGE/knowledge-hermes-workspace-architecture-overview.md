@@ -51,7 +51,7 @@ Docker-based workspace with agent, dashboard, PostgreSQL [Enriched: context adde
 | Reuse | 6.0 / 20 |
 | Confidence | 18.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T16:07:25.720087+00:00 |
+| Updated | 2026-06-11T16:12:06.386246+00:00 |
 
 ## Source
 

@@ -61,7 +61,7 @@ Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECU
 | Reuse | 15.0 / 20 |
 | Confidence | 8.0 / 20 |
 | Actionability | 17.0 / 20 |
-| Updated | 2026-06-11T16:07:25.726407+00:00 |
+| Updated | 2026-06-11T16:12:06.392674+00:00 |
 
 ## Source
 

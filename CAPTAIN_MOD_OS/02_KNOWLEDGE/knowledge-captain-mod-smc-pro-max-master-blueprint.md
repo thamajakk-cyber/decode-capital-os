@@ -60,7 +60,7 @@ Complete blueprint for Captain Mod SMC Pro Max — infrastructure, workspace, kn
 | Reuse | 6.0 / 20 |
 | Confidence | 17.4 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T16:07:25.719313+00:00 |
+| Updated | 2026-06-11T16:12:06.385615+00:00 |
 
 ## Source
 

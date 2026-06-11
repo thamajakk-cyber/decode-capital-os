@@ -3,11 +3,11 @@ schema: agent
 table: agent_memory_registry
 id: 93f3f839-3a27-42fb-91b6-481100ad5fbc
 agent: Captain Mod
-memory_type: constraint
+memory_type: workflow
 key: prevent-failure-50492464
 created: 2026-06-11T16:07:41.207057+00:00
 updated: 2026-06-11T16:07:41.207057+00:00
-quality_score: 0
+quality_score: 32.4
 quality_grade: F
 ---
 
@@ -19,7 +19,7 @@ quality_grade: F
 |---|---|
 | ID | `93f3f839-3a27-42fb-91b6-481100ad5fbc` |
 | Agent | Captain Mod |
-| Memory Type | constraint |
+| Memory Type | workflow |
 | Key | `prevent-failure-50492464` |
 | Confidence | 0.95 |
 | Source | enrichment-engine-failure |
@@ -38,13 +38,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **0** / 100 (F) |
-| Evidence | 0 / 20 |
-| Impact | 0 / 20 |
-| Reuse | 0 / 20 |
-| Confidence | 0 / 20 |
-| Actionability | 0 / 20 |
-| Updated | None |
+| Total | **32.4** / 100 (F) |
+| Evidence | 7.0 / 20 |
+| Impact | 12 / 20 |
+| Reuse | 0.0 / 20 |
+| Confidence | 13.4 / 20 |
+| Actionability | 0.0 / 20 |
+| Updated | 2026-06-11T16:12:06.413192+00:00 |
 
 ## Source
 

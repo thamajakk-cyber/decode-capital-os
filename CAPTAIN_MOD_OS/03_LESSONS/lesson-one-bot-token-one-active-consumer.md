@@ -49,7 +49,7 @@ What: Telegram bot tokens can only be polled by one instance at a time. Running 
 | Reuse | 7.0 / 20 |
 | Confidence | 13.4 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T16:07:25.728230+00:00 |
+| Updated | 2026-06-11T16:12:06.394849+00:00 |
 
 ## Source
 

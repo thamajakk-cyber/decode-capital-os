@@ -7,7 +7,7 @@ failure_type: configuration
 severity: high
 status: resolved
 created: 2026-06-11T16:07:40.983533+00:00
-quality_score: 62.0
+quality_score: 64.0
 quality_grade: D
 ---
 
@@ -55,13 +55,13 @@ Always configure certbot auto-renewal. Monitor certificate expiry at 30-day inte
 
 | Metric | Score |
 |---|---|
-| Total | **62.0** / 100 (D) |
+| Total | **64.0** / 100 (D) |
 | Evidence | 9.0 / 20 |
 | Impact | 15 / 20 |
 | Reuse | 15.0 / 20 |
-| Confidence | 6.0 / 20 |
+| Confidence | 8.0 / 20 |
 | Actionability | 17.0 / 20 |
-| Updated | 2026-06-11T16:07:41.209463+00:00 |
+| Updated | 2026-06-11T16:12:06.393260+00:00 |
 
 ## Source
 

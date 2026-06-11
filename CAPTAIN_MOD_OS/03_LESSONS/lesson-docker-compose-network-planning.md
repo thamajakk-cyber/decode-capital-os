@@ -49,7 +49,7 @@ What: Always declare shared networks in docker-compose.yml for inter-container c
 | Reuse | 7.0 / 20 |
 | Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T16:07:25.729596+00:00 |
+| Updated | 2026-06-11T16:12:06.396081+00:00 |
 
 ## Source
 
