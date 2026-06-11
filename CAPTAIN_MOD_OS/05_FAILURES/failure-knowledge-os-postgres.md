@@ -1,35 +1,35 @@
 ---
 schema: failure
 table: failure_registry
-id: 007f20ed-5a10-4259-85ad-4a90b7794116
+id: 9b32e356-b4bc-40ad-b657-92fa8404486a
 system: knowledge-os-postgres
-failure_type: infrastructure
+failure_type: application
 severity: high
 status: resolved
-created: 2026-06-11T15:38:54.997218+00:00
+created: 2026-06-11T15:43:07.419398+00:00
 ---
 
-# ❌ knowledge-os-postgres — infrastructure
+# ❌ knowledge-os-postgres — application
 
 ## Metadata
 
 | Field | Value |
 |---|---|
-| ID | `007f20ed-5a10-4259-85ad-4a90b7794116` |
+| ID | `9b32e356-b4bc-40ad-b657-92fa8404486a` |
 | System | knowledge-os-postgres |
-| Type | infrastructure |
+| Type | application |
 | Severity | high |
-| Date | 2026-06-11T15:38:54.997218+00:00 |
+| Date | 2026-06-11T15:43:07.419398+00:00 |
 | Status | resolved |
-| Created | 2026-06-11T15:38:54.997218+00:00 |
+| Created | 2026-06-11T15:43:07.419398+00:00 |
 
 ## Symptom
 
-PostgreSQL container unreachable from Hermes container
+PostgreSQL container on default bridge network unreachable from Hermes container on hermes-workspace_default network. Docker firewall blocks cross-network TCP.
 
 ## Root Cause
 
-{"text": "PostgreSQL on default bridge network, Hermes on hermes-workspace_default. Cross-network TCP blocked by Docker firewall."}
+{"text": "PostgreSQL container on default bridge network unreachable from Hermes container on hermes-workspace_default network. Docker firewall blocks cross-network TCP."}
 
 ## Evidence
 
@@ -39,7 +39,7 @@ PostgreSQL container unreachable from Hermes container
 
 ## Fix Applied
 
-Connected PostgreSQL container to hermes-workspace_default network
+Connected PostgreSQL container to hermes-workspace_default via docker network connect
 
 ## Verification
 
@@ -47,11 +47,11 @@ Connected PostgreSQL container to hermes-workspace_default network
 
 ## Preventive Rule
 
-
+Always declare shared networks in docker-compose.yml for inter-container communication
 
 ## Source
 
 - Database: `knowledge_os`
 - Schema: `failure`
 - Table: `failure_registry`
-- Row: `007f20ed-5a10-4259-85ad-4a90b7794116`
+- Row: `9b32e356-b4bc-40ad-b657-92fa8404486a`
