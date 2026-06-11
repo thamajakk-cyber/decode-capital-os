@@ -5,6 +5,8 @@ id: 5109e76a-1213-4e2c-ae09-4b0c19a2bf4d
 title: Telegram Single Consumer Rule
 lesson_type: operational
 created: 2026-06-11T15:45:33.879245+00:00
+quality_score: 45.0
+quality_grade: F
 ---
 
 # 📖 Telegram Single Consumer Rule
@@ -36,6 +38,18 @@ One Telegram bot [REDACTED] active consumer. Verify token uniqueness before depl
   "preventive_rule": "One Telegram bot token = One active consumer. Verify token uniqueness before deploying."
 }
 ```
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **45.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 18 / 20 |
+| Reuse | 7.0 / 20 |
+| Confidence | 12.0 / 20 |
+| Actionability | 3.0 / 20 |
+| Updated | 2026-06-11T15:52:45.578491+00:00 |
 
 ## Source
 

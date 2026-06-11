@@ -7,6 +7,8 @@ memory_type: constraint
 key: telegram-single-consumer-rule
 created: 2026-06-11T15:39:51.327720+00:00
 updated: 2026-06-11T15:39:51.327720+00:00
+quality_score: 47.0
+quality_grade: F
 ---
 
 # 🤖 Captain Mod — telegram-single-consumer-rule
@@ -29,6 +31,18 @@ updated: 2026-06-11T15:39:51.327720+00:00
 {
   "text": "Telegram bot tokens can only be consumed by one Hermes instance. Before deploying, always verify token uniqueness across all environments."
 }
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **47.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 16 / 20 |
+| Reuse | 6.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 6.0 / 20 |
+| Updated | 2026-06-11T15:52:45.583033+00:00 |
 
 ## Source
 

@@ -7,6 +7,8 @@ memory_type: environment
 key: deployment
 created: 2026-06-11T15:07:49.841401+00:00
 updated: 2026-06-11T15:07:49.841401+00:00
+quality_score: 27.0
+quality_grade: F
 ---
 
 # 🤖 hermes-default — deployment
@@ -33,6 +35,18 @@ updated: 2026-06-11T15:07:49.841401+00:00
   "database": "knowledge_os",
   "postgres_version": "17.10"
 }
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **27.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 8 / 20 |
+| Reuse | 0.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 0.0 / 20 |
+| Updated | 2026-06-11T15:52:45.581981+00:00 |
 
 ## Source
 

@@ -5,6 +5,8 @@ id: 55af0d68-9399-458d-b508-d136c5f64158
 title: Gateway Auth Layer Awareness
 lesson_type: operational
 created: 2026-06-11T15:45:49.794776+00:00
+quality_score: 45.0
+quality_grade: F
 ---
 
 # 📖 Gateway Auth Layer Awareness
@@ -36,6 +38,18 @@ Always authenticate through gateway API_SERVER_KEY when making provider requests
   "preventive_rule": "Always authenticate through gateway API_SERVER_KEY when making provider requests"
 }
 ```
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **45.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 18 / 20 |
+| Reuse | 7.0 / 20 |
+| Confidence | 12.0 / 20 |
+| Actionability | 3.0 / 20 |
+| Updated | 2026-06-11T15:52:45.579163+00:00 |
 
 ## Source
 

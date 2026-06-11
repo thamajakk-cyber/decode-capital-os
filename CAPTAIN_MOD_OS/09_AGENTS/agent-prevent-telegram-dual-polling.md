@@ -7,6 +7,8 @@ memory_type: constraint
 key: prevent-telegram-dual-polling
 created: 2026-06-11T15:45:33.887357+00:00
 updated: 2026-06-11T15:45:33.887357+00:00
+quality_score: 47.0
+quality_grade: F
 ---
 
 # 🤖 Captain Mod — prevent-telegram-dual-polling
@@ -31,6 +33,18 @@ updated: 2026-06-11T15:45:33.887357+00:00
   "preventive_rule": "One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.",
   "root_cause_summary": "Host Hermes and Docker Hermes both configured with same TELEGRAM_BOT_TOKEN"
 }
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **47.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 16 / 20 |
+| Reuse | 6.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 6.0 / 20 |
+| Updated | 2026-06-11T15:52:45.583513+00:00 |
 
 ## Source
 

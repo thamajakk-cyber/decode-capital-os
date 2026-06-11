@@ -5,6 +5,8 @@ id: e08d1cbe-ee51-4262-b9e0-48b4f9c48668
 title: One Bot Token = One Active Consumer
 lesson_type: operational
 created: 2026-06-11T15:07:49.841401+00:00
+quality_score: 43.4
+quality_grade: F
 ---
 
 # 📖 One Bot Token = One Active Consumer
@@ -36,6 +38,18 @@ Telegram bot tokens can only be polled by one instance at a time. Running multip
   "Always verify platform status after multi-instance deployment"
 ]
 ```
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **43.4** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 17 / 20 |
+| Reuse | 7.0 / 20 |
+| Confidence | 11.4 / 20 |
+| Actionability | 3.0 / 20 |
+| Updated | 2026-06-11T15:52:45.577347+00:00 |
 
 ## Source
 

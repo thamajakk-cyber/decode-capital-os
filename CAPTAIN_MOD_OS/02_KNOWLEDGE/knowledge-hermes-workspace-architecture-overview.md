@@ -7,6 +7,8 @@ category: architecture
 created: 2026-06-11T15:39:18.097193+00:00
 updated: 2026-06-11T15:39:18.097193+00:00
 tags: []
+quality_score: 52.0
+quality_grade: F
 ---
 
 # 📚 Hermes Workspace Architecture Overview
@@ -38,6 +40,18 @@ Docker-based workspace with agent, dashboard, PostgreSQL
 ## Tags
 
 []
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **52.0** / 100 (F) |
+| Evidence | 7.0 / 20 |
+| Impact | 20 / 20 |
+| Reuse | 6.0 / 20 |
+| Confidence | 16.0 / 20 |
+| Actionability | 3.0 / 20 |
+| Updated | 2026-06-11T15:52:45.568493+00:00 |
 
 ## Source
 

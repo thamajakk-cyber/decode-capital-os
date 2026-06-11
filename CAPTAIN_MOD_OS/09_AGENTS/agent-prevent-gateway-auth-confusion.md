@@ -7,6 +7,8 @@ memory_type: constraint
 key: prevent-gateway-auth-confusion
 created: 2026-06-11T15:45:49.803919+00:00
 updated: 2026-06-11T15:45:49.803919+00:00
+quality_score: 47.0
+quality_grade: F
 ---
 
 # 🤖 Captain Mod — prevent-gateway-auth-confusion
@@ -31,6 +33,18 @@ updated: 2026-06-11T15:45:49.803919+00:00
   "preventive_rule": "Always authenticate through gateway API_SERVER_KEY when making provider requests",
   "root_cause_summary": "Gateway API_SERVER_KEY auth layer rejecting unauthenticated requests. Xiaomi provider key was valid but gateway required its own [REDACTED]"
 }
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **47.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 16 / 20 |
+| Reuse | 6.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 6.0 / 20 |
+| Updated | 2026-06-11T15:52:45.584082+00:00 |
 
 ## Source
 

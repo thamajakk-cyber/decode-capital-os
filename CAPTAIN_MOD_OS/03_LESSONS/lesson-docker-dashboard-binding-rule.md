@@ -5,6 +5,8 @@ id: 93b35cb0-43ee-4c03-b853-6c62f52889eb
 title: Docker Dashboard Binding Rule
 lesson_type: operational
 created: 2026-06-11T15:45:56.124939+00:00
+quality_score: 45.0
+quality_grade: F
 ---
 
 # 📖 Docker Dashboard Binding Rule
@@ -36,6 +38,18 @@ Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECU
   "preventive_rule": "Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECURE=1 for non-loopback."
 }
 ```
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **45.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 18 / 20 |
+| Reuse | 7.0 / 20 |
+| Confidence | 12.0 / 20 |
+| Actionability | 3.0 / 20 |
+| Updated | 2026-06-11T15:52:45.579478+00:00 |
 
 ## Source
 

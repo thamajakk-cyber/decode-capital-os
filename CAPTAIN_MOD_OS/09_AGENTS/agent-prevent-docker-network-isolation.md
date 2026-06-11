@@ -7,6 +7,8 @@ memory_type: constraint
 key: prevent-docker-network-isolation
 created: 2026-06-11T15:45:43.514418+00:00
 updated: 2026-06-11T15:45:43.514418+00:00
+quality_score: 47.0
+quality_grade: F
 ---
 
 # 🤖 Captain Mod — prevent-docker-network-isolation
@@ -31,6 +33,18 @@ updated: 2026-06-11T15:45:43.514418+00:00
   "preventive_rule": "Always declare shared networks in docker-compose.yml for inter-container communication",
   "root_cause_summary": "PostgreSQL on default bridge network, Hermes on hermes-workspace_default. Docker firewall blocks cross-network TCP."
 }
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **47.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 16 / 20 |
+| Reuse | 6.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 6.0 / 20 |
+| Updated | 2026-06-11T15:52:45.583778+00:00 |
 
 ## Source
 

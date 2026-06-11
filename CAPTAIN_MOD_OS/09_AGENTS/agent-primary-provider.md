@@ -7,6 +7,8 @@ memory_type: preference
 key: primary_provider
 created: 2026-06-11T15:07:49.841401+00:00
 updated: 2026-06-11T15:07:49.841401+00:00
+quality_score: 26.4
+quality_grade: F
 ---
 
 # 🤖 hermes-default — primary_provider
@@ -32,6 +34,18 @@ updated: 2026-06-11T15:07:49.841401+00:00
   "base_url": "https://token-plan-sgp.xiaomimimo.com/anthropic",
   "provider": "xiaomi"
 }
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **26.4** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 8 / 20 |
+| Reuse | 0.0 / 20 |
+| Confidence | 13.4 / 20 |
+| Actionability | 0.0 / 20 |
+| Updated | 2026-06-11T15:52:45.581604+00:00 |
 
 ## Source
 

@@ -149,6 +149,15 @@ def generate_knowledge_md(row: dict) -> str:
     updated = row.get("updated_at", "N/A")
     row_id = row.get("id", "N/A")
 
+    q_score = row.get('quality_score', 0)
+    q_grade = row.get('quality_grade', 'F')
+    q_evidence = row.get('evidence_score', 0)
+    q_impact = row.get('impact_score', 0)
+    q_reuse = row.get('reuse_score', 0)
+    q_conf = row.get('q_confidence_score', 0)
+    q_action = row.get('actionability_score', 0)
+    q_updated = row.get('quality_last_updated', 'N/A')
+
     return f"""---
 schema: knowledge
 table: knowledge_registry
@@ -158,6 +167,8 @@ category: {category}
 created: {created}
 updated: {updated}
 tags: {tags}
+quality_score: {q_score}
+quality_grade: {q_grade}
 ---
 
 # 📚 {title}
@@ -188,6 +199,18 @@ tags: {tags}
 
 {tags}
 
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **{q_score}** / 100 ({q_grade}) |
+| Evidence | {q_evidence} / 20 |
+| Impact | {q_impact} / 20 |
+| Reuse | {q_reuse} / 20 |
+| Confidence | {q_conf} / 20 |
+| Actionability | {q_action} / 20 |
+| Updated | {q_updated} |
+
 ## Source
 
 - Database: `knowledge_os`
@@ -212,6 +235,15 @@ def generate_decision_md(row: dict) -> str:
     created = row.get("created_at", "N/A")
     row_id = row.get("id", "N/A")
 
+    q_score = row.get('quality_score', 0)
+    q_grade = row.get('quality_grade', 'F')
+    q_evidence = row.get('evidence_score', 0)
+    q_impact = row.get('impact_score', 0)
+    q_reuse = row.get('reuse_score', 0)
+    q_conf = row.get('q_confidence_score', 0)
+    q_action = row.get('actionability_score', 0)
+    q_updated = row.get('quality_last_updated', 'N/A')
+
     return f"""---
 schema: decision
 table: decision_registry
@@ -220,6 +252,8 @@ title: {title}
 decision_type: {decision_type}
 status: {status}
 created: {created}
+quality_score: {q_score}
+quality_grade: {q_grade}
 ---
 
 # ⚖️ {title}
@@ -262,6 +296,18 @@ created: {created}
 
 {actual_outcome}
 
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **{q_score}** / 100 ({q_grade}) |
+| Evidence | {q_evidence} / 20 |
+| Impact | {q_impact} / 20 |
+| Reuse | {q_reuse} / 20 |
+| Confidence | {q_conf} / 20 |
+| Actionability | {q_action} / 20 |
+| Updated | {q_updated} |
+
 ## Source
 
 - Database: `knowledge_os`
@@ -286,6 +332,15 @@ def generate_failure_md(row: dict) -> str:
     created = row.get("created_at", "N/A")
     row_id = row.get("id", "N/A")
 
+    q_score = row.get('quality_score', 0)
+    q_grade = row.get('quality_grade', 'F')
+    q_evidence = row.get('evidence_score', 0)
+    q_impact = row.get('impact_score', 0)
+    q_reuse = row.get('reuse_score', 0)
+    q_conf = row.get('q_confidence_score', 0)
+    q_action = row.get('actionability_score', 0)
+    q_updated = row.get('quality_last_updated', 'N/A')
+
     return f"""---
 schema: failure
 table: failure_registry
@@ -295,6 +350,8 @@ failure_type: {failure_type}
 severity: {severity}
 status: {status}
 created: {created}
+quality_score: {q_score}
+quality_grade: {q_grade}
 ---
 
 # ❌ {system_name} — {failure_type}
@@ -337,6 +394,18 @@ created: {created}
 
 {preventive_rule}
 
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **{q_score}** / 100 ({q_grade}) |
+| Evidence | {q_evidence} / 20 |
+| Impact | {q_impact} / 20 |
+| Reuse | {q_reuse} / 20 |
+| Confidence | {q_conf} / 20 |
+| Actionability | {q_action} / 20 |
+| Updated | {q_updated} |
+
 ## Source
 
 - Database: `knowledge_os`
@@ -358,6 +427,15 @@ def generate_lesson_md(row: dict) -> str:
     created = row.get("created_at", "N/A")
     row_id = row.get("id", "N/A")
 
+    q_score = row.get('quality_score', 0)
+    q_grade = row.get('quality_grade', 'F')
+    q_evidence = row.get('evidence_score', 0)
+    q_impact = row.get('impact_score', 0)
+    q_reuse = row.get('reuse_score', 0)
+    q_conf = row.get('q_confidence_score', 0)
+    q_action = row.get('actionability_score', 0)
+    q_updated = row.get('quality_last_updated', 'N/A')
+
     return f"""---
 schema: lesson
 table: lesson_registry
@@ -365,6 +443,8 @@ id: {row_id}
 title: {title}
 lesson_type: {lesson_type}
 created: {created}
+quality_score: {q_score}
+quality_grade: {q_grade}
 ---
 
 # 📖 {title}
@@ -392,6 +472,18 @@ created: {created}
 {key_takeaways}
 ```
 
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **{q_score}** / 100 ({q_grade}) |
+| Evidence | {q_evidence} / 20 |
+| Impact | {q_impact} / 20 |
+| Reuse | {q_reuse} / 20 |
+| Confidence | {q_conf} / 20 |
+| Actionability | {q_action} / 20 |
+| Updated | {q_updated} |
+
 ## Source
 
 - Database: `knowledge_os`
@@ -412,6 +504,15 @@ def generate_agent_md(row: dict) -> str:
     updated = row.get("updated_at", "N/A")
     row_id = row.get("id", "N/A")
 
+    q_score = row.get('quality_score', 0)
+    q_grade = row.get('quality_grade', 'F')
+    q_evidence = row.get('evidence_score', 0)
+    q_impact = row.get('impact_score', 0)
+    q_reuse = row.get('reuse_score', 0)
+    q_conf = row.get('q_confidence_score', 0)
+    q_action = row.get('actionability_score', 0)
+    q_updated = row.get('quality_last_updated', 'N/A')
+
     return f"""---
 schema: agent
 table: agent_memory_registry
@@ -421,6 +522,8 @@ memory_type: {memory_type}
 key: {memory_key}
 created: {created}
 updated: {updated}
+quality_score: {q_score}
+quality_grade: {q_grade}
 ---
 
 # 🤖 {agent} — {memory_key}
@@ -441,6 +544,18 @@ updated: {updated}
 ## Value
 
 {memory_value}
+
+## Quality Score
+
+| Metric | Score |
+|---|---|
+| Total | **{q_score}** / 100 ({q_grade}) |
+| Evidence | {q_evidence} / 20 |
+| Impact | {q_impact} / 20 |
+| Reuse | {q_reuse} / 20 |
+| Confidence | {q_conf} / 20 |
+| Actionability | {q_action} / 20 |
+| Updated | {q_updated} |
 
 ## Source
 
