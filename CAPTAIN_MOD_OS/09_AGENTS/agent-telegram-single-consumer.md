@@ -7,7 +7,7 @@ memory_type: constraint
 key: telegram_single_consumer
 created: 2026-06-11T15:07:49.841401+00:00
 updated: 2026-06-11T15:07:49.841401+00:00
-quality_score: 46.4
+quality_score: 56.4
 quality_grade: F
 ---
 
@@ -30,6 +30,11 @@ quality_grade: F
 
 {
   "rule": "One bot [REDACTED] active consumer",
+  "enrichment": {
+    "rule": "One bot [REDACTED] active consumer",
+    "sop_title": "SOP: Unknown",
+    "automation": true
+  },
   "host_hermes": "primary",
   "docker_hermes": "telegram_disabled"
 }
@@ -38,13 +43,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **46.4** / 100 (F) |
+| Total | **56.4** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 16 / 20 |
-| Reuse | 6.0 / 20 |
-| Confidence | 13.4 / 20 |
-| Actionability | 6.0 / 20 |
-| Updated | 2026-06-11T15:52:45.582285+00:00 |
+| Reuse | 10.0 / 20 |
+| Confidence | 15.4 / 20 |
+| Actionability | 10.0 / 20 |
+| Updated | 2026-06-11T16:07:25.732782+00:00 |
 
 ## Source
 

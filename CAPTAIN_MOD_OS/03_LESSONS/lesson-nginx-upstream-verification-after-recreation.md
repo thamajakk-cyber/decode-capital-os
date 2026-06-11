@@ -5,7 +5,7 @@ id: 86db02d5-5406-41d6-a76f-0b8e62cbcc08
 title: Nginx Upstream Verification After Recreation
 lesson_type: operational
 created: 2026-06-11T15:56:35.962784+00:00
-quality_score: 0
+quality_score: 47.0
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-After container recreation, verify nginx upstream targets match new container ports
+What: After container recreation, verify nginx upstream targets match new container ports. Why: Lesson recorded from operational experience. Learned: {'root_cause': 'nginx upstream pointing to wrong container port after recreation', 'fix_applied': 'U
 
 ## Key Takeaways
 
@@ -43,13 +43,13 @@ After container recreation, verify nginx upstream targets match new container po
 
 | Metric | Score |
 |---|---|
-| Total | **0** / 100 (F) |
-| Evidence | 0 / 20 |
-| Impact | 0 / 20 |
-| Reuse | 0 / 20 |
-| Confidence | 0 / 20 |
-| Actionability | 0 / 20 |
-| Updated | None |
+| Total | **47.0** / 100 (F) |
+| Evidence | 5.0 / 20 |
+| Impact | 18 / 20 |
+| Reuse | 7.0 / 20 |
+| Confidence | 14.0 / 20 |
+| Actionability | 3.0 / 20 |
+| Updated | 2026-06-11T16:07:25.730372+00:00 |
 
 ## Source
 

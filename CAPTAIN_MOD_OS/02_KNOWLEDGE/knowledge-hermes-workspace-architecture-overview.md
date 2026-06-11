@@ -7,7 +7,7 @@ category: architecture
 created: 2026-06-11T15:39:18.097193+00:00
 updated: 2026-06-11T15:39:18.097193+00:00
 tags: []
-quality_score: 52.0
+quality_score: 54.0
 quality_grade: F
 ---
 
@@ -29,7 +29,7 @@ quality_grade: F
 
 ## Summary
 
-Docker-based workspace with agent, dashboard, PostgreSQL
+Docker-based workspace with agent, dashboard, PostgreSQL [Enriched: context added, evidence package generated]
 
 ## Content
 
@@ -45,13 +45,13 @@ Docker-based workspace with agent, dashboard, PostgreSQL
 
 | Metric | Score |
 |---|---|
-| Total | **52.0** / 100 (F) |
+| Total | **54.0** / 100 (F) |
 | Evidence | 7.0 / 20 |
 | Impact | 20 / 20 |
 | Reuse | 6.0 / 20 |
-| Confidence | 16.0 / 20 |
+| Confidence | 18.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.568493+00:00 |
+| Updated | 2026-06-11T16:07:25.720087+00:00 |
 
 ## Source
 

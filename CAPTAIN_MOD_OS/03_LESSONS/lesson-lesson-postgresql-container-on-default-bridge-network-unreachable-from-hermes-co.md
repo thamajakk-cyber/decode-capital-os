@@ -5,7 +5,7 @@ id: 0d7381bb-3608-401f-89e8-d02cfc58e6c8
 title: Lesson: PostgreSQL container on default bridge network unreachable from Hermes container on hermes-workspace
 lesson_type: operational
 created: 2026-06-11T15:43:07.426189+00:00
-quality_score: 45.0
+quality_score: 47.0
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-Prevention for: PostgreSQL container on default bridge network unreachable from Hermes container on hermes-workspace_default network. Docker firewall blocks cross-network TCP.
+What: Prevention for: PostgreSQL container on default bridge network unreachable from Hermes container on . Why: Lesson recorded from operational experience. Learned: {'rule': 'Always verify configuration', 'prevention': 'Always declare shared networks in docker-comp
 
 ## Key Takeaways
 
@@ -42,13 +42,13 @@ Prevention for: PostgreSQL container on default bridge network unreachable from 
 
 | Metric | Score |
 |---|---|
-| Total | **45.0** / 100 (F) |
+| Total | **47.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 18 / 20 |
 | Reuse | 7.0 / 20 |
-| Confidence | 12.0 / 20 |
+| Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.578232+00:00 |
+| Updated | 2026-06-11T16:07:25.729092+00:00 |
 
 ## Source
 

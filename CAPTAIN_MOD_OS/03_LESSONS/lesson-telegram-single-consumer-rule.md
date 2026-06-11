@@ -5,7 +5,7 @@ id: 5109e76a-1213-4e2c-ae09-4b0c19a2bf4d
 title: Telegram Single Consumer Rule
 lesson_type: operational
 created: 2026-06-11T15:45:33.879245+00:00
-quality_score: 45.0
+quality_score: 47.0
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.
+What: One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.. Why: Lesson recorded from operational experience. Learned: {'root_cause': 'Host Hermes and Docker Hermes both configured with same TELEGRAM_BOT_TOKEN', 'fix_ap
 
 ## Key Takeaways
 
@@ -43,13 +43,13 @@ One Telegram bot [REDACTED] active consumer. Verify token uniqueness before depl
 
 | Metric | Score |
 |---|---|
-| Total | **45.0** / 100 (F) |
+| Total | **47.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 18 / 20 |
 | Reuse | 7.0 / 20 |
-| Confidence | 12.0 / 20 |
+| Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.578491+00:00 |
+| Updated | 2026-06-11T16:07:25.729341+00:00 |
 
 ## Source
 

@@ -7,7 +7,7 @@ failure_type: infrastructure
 severity: high
 status: resolved
 created: 2026-06-11T15:45:43.500222+00:00
-quality_score: 62.0
+quality_score: 64.0
 quality_grade: D
 ---
 
@@ -27,7 +27,7 @@ quality_grade: D
 
 ## Symptom
 
-PostgreSQL container unreachable from Hermes container due to Docker bridge network isolation
+PostgreSQL container unreachable from Hermes container due to Docker bridge network isolation [Evidence: 3 refs. Context: Status: resolved. Fix applied: Yes.]
 
 ## Root Cause
 
@@ -55,13 +55,13 @@ Always declare shared networks in docker-compose.yml for inter-container communi
 
 | Metric | Score |
 |---|---|
-| Total | **62.0** / 100 (D) |
+| Total | **64.0** / 100 (D) |
 | Evidence | 9.0 / 20 |
 | Impact | 15 / 20 |
 | Reuse | 15.0 / 20 |
-| Confidence | 6.0 / 20 |
+| Confidence | 8.0 / 20 |
 | Actionability | 17.0 / 20 |
-| Updated | 2026-06-11T15:52:45.574634+00:00 |
+| Updated | 2026-06-11T16:07:25.725844+00:00 |
 
 ## Source
 

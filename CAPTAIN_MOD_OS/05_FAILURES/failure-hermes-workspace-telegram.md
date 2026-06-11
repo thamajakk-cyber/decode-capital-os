@@ -7,7 +7,7 @@ failure_type: integration
 severity: high
 status: verified
 created: 2026-06-11T15:07:49.841401+00:00
-quality_score: 66.0
+quality_score: 68.0
 quality_grade: D
 ---
 
@@ -27,7 +27,7 @@ quality_grade: D
 
 ## Symptom
 
-Telegram polling conflict: terminated by other getUpdates request
+Telegram polling conflict: terminated by other getUpdates request [Evidence: 3 refs. Context: Status: verified. Fix applied: Yes.]
 
 ## Root Cause
 
@@ -59,13 +59,13 @@ One bot [REDACTED] active consumer. If multiple Hermes instances exist, disable 
 
 | Metric | Score |
 |---|---|
-| Total | **66.0** / 100 (D) |
+| Total | **68.0** / 100 (D) |
 | Evidence | 13.0 / 20 |
 | Impact | 15 / 20 |
 | Reuse | 15.0 / 20 |
-| Confidence | 6.0 / 20 |
+| Confidence | 8.0 / 20 |
 | Actionability | 17.0 / 20 |
-| Updated | 2026-06-11T15:52:45.573103+00:00 |
+| Updated | 2026-06-11T16:07:25.724418+00:00 |
 
 ## Source
 

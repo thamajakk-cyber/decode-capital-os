@@ -5,7 +5,7 @@ id: 93b35cb0-43ee-4c03-b853-6c62f52889eb
 title: Docker Dashboard Binding Rule
 lesson_type: operational
 created: 2026-06-11T15:45:56.124939+00:00
-quality_score: 45.0
+quality_score: 47.0
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECURE=1 for non-loopback.
+What: Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECURE=1 for non-loopbac. Why: Lesson recorded from operational experience. Learned: {'root_cause': 'Dashboard s6 script defaults HERMES_DASHBOARD_HOST to 127.0.0.1 inside container. Wo
 
 ## Key Takeaways
 
@@ -43,13 +43,13 @@ Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECU
 
 | Metric | Score |
 |---|---|
-| Total | **45.0** / 100 (F) |
+| Total | **47.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 18 / 20 |
 | Reuse | 7.0 / 20 |
-| Confidence | 12.0 / 20 |
+| Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.579478+00:00 |
+| Updated | 2026-06-11T16:07:25.730097+00:00 |
 
 ## Source
 

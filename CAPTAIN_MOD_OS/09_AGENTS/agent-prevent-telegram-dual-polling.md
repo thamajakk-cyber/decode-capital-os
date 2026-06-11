@@ -7,7 +7,7 @@ memory_type: constraint
 key: prevent-telegram-dual-polling
 created: 2026-06-11T15:45:33.887357+00:00
 updated: 2026-06-11T15:45:33.887357+00:00
-quality_score: 47.0
+quality_score: 59.0
 quality_grade: F
 ---
 
@@ -29,6 +29,11 @@ quality_grade: F
 ## Value
 
 {
+  "enrichment": {
+    "rule": "One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.",
+    "sop_title": "SOP: Unknown",
+    "automation": true
+  },
   "fix_summary": "Commented TELEGRAM_BOT_TOKEN in Docker agent .env file",
   "preventive_rule": "One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.",
   "root_cause_summary": "Host Hermes and Docker Hermes both configured with same TELEGRAM_BOT_TOKEN"
@@ -38,13 +43,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **47.0** / 100 (F) |
-| Evidence | 5.0 / 20 |
+| Total | **59.0** / 100 (F) |
+| Evidence | 7.0 / 20 |
 | Impact | 16 / 20 |
-| Reuse | 6.0 / 20 |
-| Confidence | 14.0 / 20 |
-| Actionability | 6.0 / 20 |
-| Updated | 2026-06-11T15:52:45.583513+00:00 |
+| Reuse | 10.0 / 20 |
+| Confidence | 16.0 / 20 |
+| Actionability | 10.0 / 20 |
+| Updated | 2026-06-11T16:07:25.734637+00:00 |
 
 ## Source
 

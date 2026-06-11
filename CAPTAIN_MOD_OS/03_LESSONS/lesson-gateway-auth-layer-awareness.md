@@ -5,7 +5,7 @@ id: 55af0d68-9399-458d-b508-d136c5f64158
 title: Gateway Auth Layer Awareness
 lesson_type: operational
 created: 2026-06-11T15:45:49.794776+00:00
-quality_score: 45.0
+quality_score: 47.0
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-Always authenticate through gateway API_SERVER_KEY when making provider requests
+What: Always authenticate through gateway API_SERVER_KEY when making provider requests. Why: Lesson recorded from operational experience. Learned: {'root_cause': 'Gateway API_SERVER_KEY auth layer rejecting unauthenticated requests. Xiaomi provide
 
 ## Key Takeaways
 
@@ -43,13 +43,13 @@ Always authenticate through gateway API_SERVER_KEY when making provider requests
 
 | Metric | Score |
 |---|---|
-| Total | **45.0** / 100 (F) |
+| Total | **47.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 18 / 20 |
 | Reuse | 7.0 / 20 |
-| Confidence | 12.0 / 20 |
+| Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.579163+00:00 |
+| Updated | 2026-06-11T16:07:25.729848+00:00 |
 
 ## Source
 

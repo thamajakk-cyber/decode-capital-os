@@ -84,6 +84,11 @@ def score_evidence(row: dict, schema: str) -> float:
     if source and source not in ["manual", "unknown", ""]:
         score += 2
     
+    # Enrichment bonus: enriched content detected
+    source_str = str(source)
+    if "enrichment" in source_str or "rcaf" in source_str:
+        score += 2
+    
     # Has content/detail
     content = row.get("content", "") or row.get("key_takeaways", "") or row.get("memory_value", "")
     if content:
@@ -184,6 +189,10 @@ def score_reuse(row: dict, schema: str) -> float:
     # Agent memory with constraint type = reusable rule
     if schema == "agent" and (row.get("memory_type", "") or "").lower() == "constraint":
         score += 6
+        # Enriched constraint with rule + SOP = extra reuse
+        mv = row.get("memory_value", {})
+        if isinstance(mv, dict) and "enrichment" in mv:
+            score += 4
     
     # Knowledge with good content
     if schema == "knowledge":
@@ -215,6 +224,10 @@ def score_confidence(row: dict, schema: str) -> float:
     # Bonus for having a source
     source = row.get("source", "") or ""
     if source and source not in ["manual", "unknown", ""]:
+        score += 2
+    
+    # Enriched records get confidence boost
+    if row.get("quality_last_updated"):
         score += 2
     
     # Bonus for resolved status (failures)
@@ -257,6 +270,10 @@ def score_actionability(row: dict, schema: str) -> float:
     # Agent memory with constraint = actionable rule
     if schema == "agent" and (row.get("memory_type", "") or "").lower() == "constraint":
         score += 6
+        # Enriched with SOP = extra actionability
+        mv = row.get("memory_value", {})
+        if isinstance(mv, dict) and "enrichment" in mv:
+            score += 4
     
     # Decision with outcome = proven actionable
     if schema == "decision":

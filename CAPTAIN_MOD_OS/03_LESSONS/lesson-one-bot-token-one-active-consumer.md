@@ -5,7 +5,7 @@ id: e08d1cbe-ee51-4262-b9e0-48b4f9c48668
 title: One Bot Token = One Active Consumer
 lesson_type: operational
 created: 2026-06-11T15:07:49.841401+00:00
-quality_score: 43.4
+quality_score: 45.4
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-Telegram bot tokens can only be polled by one instance at a time. Running multiple Hermes instances with the same token causes persistent polling conflicts.
+What: Telegram bot tokens can only be polled by one instance at a time. Running multiple Hermes instances . Why: Lesson recorded from operational experience. Learned: ['Never share bot tokens across instances', 'Disable Telegram in secondary instances', 'Use separate
 
 ## Key Takeaways
 
@@ -43,13 +43,13 @@ Telegram bot tokens can only be polled by one instance at a time. Running multip
 
 | Metric | Score |
 |---|---|
-| Total | **43.4** / 100 (F) |
+| Total | **45.4** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 17 / 20 |
 | Reuse | 7.0 / 20 |
-| Confidence | 11.4 / 20 |
+| Confidence | 13.4 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.577347+00:00 |
+| Updated | 2026-06-11T16:07:25.728230+00:00 |
 
 ## Source
 

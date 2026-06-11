@@ -5,7 +5,7 @@ id: 8533a92e-ecfd-46be-8f27-d57bf3fab30d
 title: Docker Compose Network Planning
 lesson_type: operational
 created: 2026-06-11T15:45:43.506758+00:00
-quality_score: 45.0
+quality_score: 47.0
 quality_grade: F
 ---
 
@@ -26,7 +26,7 @@ quality_grade: F
 
 ## Summary
 
-Always declare shared networks in docker-compose.yml for inter-container communication
+What: Always declare shared networks in docker-compose.yml for inter-container communication. Why: Lesson recorded from operational experience. Learned: {'root_cause': 'PostgreSQL on default bridge network, Hermes on hermes-workspace_default. Docker fir
 
 ## Key Takeaways
 
@@ -43,13 +43,13 @@ Always declare shared networks in docker-compose.yml for inter-container communi
 
 | Metric | Score |
 |---|---|
-| Total | **45.0** / 100 (F) |
+| Total | **47.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 18 / 20 |
 | Reuse | 7.0 / 20 |
-| Confidence | 12.0 / 20 |
+| Confidence | 14.0 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.578729+00:00 |
+| Updated | 2026-06-11T16:07:25.729596+00:00 |
 
 ## Source
 

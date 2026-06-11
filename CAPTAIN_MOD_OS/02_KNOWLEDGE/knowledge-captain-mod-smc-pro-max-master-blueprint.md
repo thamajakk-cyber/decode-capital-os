@@ -7,7 +7,7 @@ category: architecture
 created: 2026-06-11T15:07:49.841401+00:00
 updated: 2026-06-11T15:07:49.841401+00:00
 tags: [blueprint, captain-mod, architecture, master-plan]
-quality_score: 50.4
+quality_score: 52.4
 quality_grade: F
 ---
 
@@ -29,7 +29,7 @@ quality_grade: F
 
 ## Summary
 
-Complete blueprint for Captain Mod SMC Pro Max — infrastructure, workspace, knowledge OS, intelligence engines, and second brain.
+Complete blueprint for Captain Mod SMC Pro Max — infrastructure, workspace, knowledge OS, intelligence engines, and second brain. [Enriched: context added, evidence package generated]
 
 ## Content
 
@@ -54,13 +54,13 @@ Complete blueprint for Captain Mod SMC Pro Max — infrastructure, workspace, kn
 
 | Metric | Score |
 |---|---|
-| Total | **50.4** / 100 (F) |
+| Total | **52.4** / 100 (F) |
 | Evidence | 7.0 / 20 |
 | Impact | 19 / 20 |
 | Reuse | 6.0 / 20 |
-| Confidence | 15.4 / 20 |
+| Confidence | 17.4 / 20 |
 | Actionability | 3.0 / 20 |
-| Updated | 2026-06-11T15:52:45.567661+00:00 |
+| Updated | 2026-06-11T16:07:25.719313+00:00 |
 
 ## Source
 

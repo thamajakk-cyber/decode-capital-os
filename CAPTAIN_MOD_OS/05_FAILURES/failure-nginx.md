@@ -7,8 +7,8 @@ failure_type: infrastructure
 severity: high
 status: resolved
 created: 2026-06-11T15:56:35.953924+00:00
-quality_score: 0
-quality_grade: F
+quality_score: 64.0
+quality_grade: D
 ---
 
 # ❌ nginx — infrastructure
@@ -27,7 +27,7 @@ quality_grade: F
 
 ## Symptom
 
-nginx reverse proxy returning 502 Bad Gateway for workspace UI
+nginx reverse proxy returning 502 Bad Gateway for workspace UI [Evidence: 3 refs. Context: Status: resolved. Fix applied: Yes.]
 
 ## Root Cause
 
@@ -55,13 +55,13 @@ After container recreation, verify nginx upstream targets match new container po
 
 | Metric | Score |
 |---|---|
-| Total | **0** / 100 (F) |
-| Evidence | 0 / 20 |
-| Impact | 0 / 20 |
-| Reuse | 0 / 20 |
-| Confidence | 0 / 20 |
-| Actionability | 0 / 20 |
-| Updated | None |
+| Total | **64.0** / 100 (D) |
+| Evidence | 9.0 / 20 |
+| Impact | 15 / 20 |
+| Reuse | 15.0 / 20 |
+| Confidence | 8.0 / 20 |
+| Actionability | 17.0 / 20 |
+| Updated | 2026-06-11T16:07:25.726647+00:00 |
 
 ## Source
 

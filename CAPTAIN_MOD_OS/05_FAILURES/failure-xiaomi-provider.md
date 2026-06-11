@@ -7,7 +7,7 @@ failure_type: infrastructure
 severity: medium
 status: resolved
 created: 2026-06-11T15:45:49.786660+00:00
-quality_score: 57.0
+quality_score: 59.0
 quality_grade: F
 ---
 
@@ -27,7 +27,7 @@ quality_grade: F
 
 ## Symptom
 
-Invalid API key error when calling Xiaomi mimo-v2.5 provider through Hermes gateway
+Invalid API key error when calling Xiaomi mimo-v2.5 provider through Hermes gateway [Evidence: 3 refs. Context: Status: resolved. Fix applied: Yes.]
 
 ## Root Cause
 
@@ -55,13 +55,13 @@ Always authenticate through gateway API_SERVER_KEY when making provider requests
 
 | Metric | Score |
 |---|---|
-| Total | **57.0** / 100 (F) |
+| Total | **59.0** / 100 (F) |
 | Evidence | 9.0 / 20 |
 | Impact | 10 / 20 |
 | Reuse | 15.0 / 20 |
-| Confidence | 6.0 / 20 |
+| Confidence | 8.0 / 20 |
 | Actionability | 17.0 / 20 |
-| Updated | 2026-06-11T15:52:45.575117+00:00 |
+| Updated | 2026-06-11T16:07:25.726085+00:00 |
 
 ## Source
 

@@ -6,7 +6,7 @@ title: Hermes Workspace Installation
 decision_type: technical
 status: validated
 created: 2026-06-11T15:07:49.841401+00:00
-quality_score: 24.0
+quality_score: 26.0
 quality_grade: F
 ---
 
@@ -58,13 +58,13 @@ Operational PASS. All gates passed. Frontend error resolved. Telegram conflict r
 
 | Metric | Score |
 |---|---|
-| Total | **24.0** / 100 (F) |
+| Total | **26.0** / 100 (F) |
 | Evidence | 0.0 / 20 |
 | Impact | 16 / 20 |
 | Reuse | 0.0 / 20 |
-| Confidence | 2.0 / 20 |
+| Confidence | 4.0 / 20 |
 | Actionability | 6.0 / 20 |
-| Updated | 2026-06-11T15:52:45.570905+00:00 |
+| Updated | 2026-06-11T16:07:25.722043+00:00 |
 
 ## Source
 

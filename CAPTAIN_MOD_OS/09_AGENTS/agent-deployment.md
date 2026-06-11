@@ -7,7 +7,7 @@ memory_type: environment
 key: deployment
 created: 2026-06-11T15:07:49.841401+00:00
 updated: 2026-06-11T15:07:49.841401+00:00
-quality_score: 27.0
+quality_score: 29.0
 quality_grade: F
 ---
 
@@ -33,6 +33,11 @@ quality_grade: F
   "domain": "decodecapital.tech",
   "vps_ip": "76.13.220.27",
   "database": "knowledge_os",
+  "enrichment": {
+    "rule": "{'ssl': 'lets-encrypt', 'domain': 'decodecapital.tech', 'vps_ip': '76.13.220.27', 'database': 'knowledge_os', 'postgres_version': '17.10'}",
+    "sop_title": "SOP: Unknown",
+    "automation": false
+  },
   "postgres_version": "17.10"
 }
 
@@ -40,13 +45,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **27.0** / 100 (F) |
+| Total | **29.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 8 / 20 |
 | Reuse | 0.0 / 20 |
-| Confidence | 14.0 / 20 |
+| Confidence | 16.0 / 20 |
 | Actionability | 0.0 / 20 |
-| Updated | 2026-06-11T15:52:45.581981+00:00 |
+| Updated | 2026-06-11T16:07:25.733164+00:00 |
 
 ## Source
 

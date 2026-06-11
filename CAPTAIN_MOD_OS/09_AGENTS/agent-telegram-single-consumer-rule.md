@@ -7,7 +7,7 @@ memory_type: constraint
 key: telegram-single-consumer-rule
 created: 2026-06-11T15:39:51.327720+00:00
 updated: 2026-06-11T15:39:51.327720+00:00
-quality_score: 47.0
+quality_score: 57.0
 quality_grade: F
 ---
 
@@ -29,20 +29,25 @@ quality_grade: F
 ## Value
 
 {
-  "text": "Telegram bot tokens can only be consumed by one Hermes instance. Before deploying, always verify token uniqueness across all environments."
+  "text": "Telegram bot tokens can only be consumed by one Hermes instance. Before deploying, always verify token uniqueness across all environments.",
+  "enrichment": {
+    "rule": "{'text': 'Telegram bot tokens can only be consumed by one Hermes instance. Before deploying, always verify token uniqueness across all environments.'}",
+    "sop_title": "SOP: Unknown",
+    "automation": true
+  }
 }
 
 ## Quality Score
 
 | Metric | Score |
 |---|---|
-| Total | **47.0** / 100 (F) |
+| Total | **57.0** / 100 (F) |
 | Evidence | 5.0 / 20 |
 | Impact | 16 / 20 |
-| Reuse | 6.0 / 20 |
-| Confidence | 14.0 / 20 |
-| Actionability | 6.0 / 20 |
-| Updated | 2026-06-11T15:52:45.583033+00:00 |
+| Reuse | 10.0 / 20 |
+| Confidence | 16.0 / 20 |
+| Actionability | 10.0 / 20 |
+| Updated | 2026-06-11T16:07:25.734174+00:00 |
 
 ## Source
 

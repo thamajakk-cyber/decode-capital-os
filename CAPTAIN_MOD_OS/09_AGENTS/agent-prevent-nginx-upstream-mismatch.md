@@ -7,7 +7,7 @@ memory_type: constraint
 key: prevent-nginx-upstream-mismatch
 created: 2026-06-11T15:56:35.972542+00:00
 updated: 2026-06-11T15:56:35.972542+00:00
-quality_score: 0
+quality_score: 59.0
 quality_grade: F
 ---
 
@@ -29,6 +29,11 @@ quality_grade: F
 ## Value
 
 {
+  "enrichment": {
+    "rule": "After container recreation, verify nginx upstream targets match new container ports",
+    "sop_title": "SOP: Unknown",
+    "automation": true
+  },
   "fix_summary": "Updated nginx proxy_pass to correct container hostname:port",
   "preventive_rule": "After container recreation, verify nginx upstream targets match new container ports",
   "root_cause_summary": "nginx upstream pointing to wrong container port after recreation"
@@ -38,13 +43,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **0** / 100 (F) |
-| Evidence | 0 / 20 |
-| Impact | 0 / 20 |
-| Reuse | 0 / 20 |
-| Confidence | 0 / 20 |
-| Actionability | 0 / 20 |
-| Updated | None |
+| Total | **59.0** / 100 (F) |
+| Evidence | 7.0 / 20 |
+| Impact | 16 / 20 |
+| Reuse | 10.0 / 20 |
+| Confidence | 16.0 / 20 |
+| Actionability | 10.0 / 20 |
+| Updated | 2026-06-11T16:07:25.735957+00:00 |
 
 ## Source
 

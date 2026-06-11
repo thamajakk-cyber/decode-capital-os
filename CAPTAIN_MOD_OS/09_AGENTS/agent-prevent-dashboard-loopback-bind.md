@@ -7,7 +7,7 @@ memory_type: constraint
 key: prevent-dashboard-loopback-bind
 created: 2026-06-11T15:45:56.133833+00:00
 updated: 2026-06-11T15:45:56.133833+00:00
-quality_score: 47.0
+quality_score: 59.0
 quality_grade: F
 ---
 
@@ -29,6 +29,11 @@ quality_grade: F
 ## Value
 
 {
+  "enrichment": {
+    "rule": "Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECURE=1 for non-loopback.",
+    "sop_title": "SOP: Unknown",
+    "automation": true
+  },
   "fix_summary": "Added HERMES_DASHBOARD_HOST=0.0.0.0 and HERMES_DASHBOARD_INSECURE=1 to workspace .env",
   "preventive_rule": "Docker dashboard must bind to 0.0.0.0 not 127.0.0.1. Use HERMES_DASHBOARD_INSECURE=1 for non-loopback.",
   "root_cause_summary": "Dashboard s6 script defaults HERMES_DASHBOARD_HOST to 127.0.0.1 inside container. Workspace container cannot reach loopback. /api/sessions returns 500 causing .map() crash."
@@ -38,13 +43,13 @@ quality_grade: F
 
 | Metric | Score |
 |---|---|
-| Total | **47.0** / 100 (F) |
-| Evidence | 5.0 / 20 |
+| Total | **59.0** / 100 (F) |
+| Evidence | 7.0 / 20 |
 | Impact | 16 / 20 |
-| Reuse | 6.0 / 20 |
-| Confidence | 14.0 / 20 |
-| Actionability | 6.0 / 20 |
-| Updated | 2026-06-11T15:52:45.584562+00:00 |
+| Reuse | 10.0 / 20 |
+| Confidence | 16.0 / 20 |
+| Actionability | 10.0 / 20 |
+| Updated | 2026-06-11T16:07:25.735675+00:00 |
 
 ## Source
 
