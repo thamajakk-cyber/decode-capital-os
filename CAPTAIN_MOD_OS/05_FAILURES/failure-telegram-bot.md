@@ -1,35 +1,35 @@
 ---
 schema: failure
 table: failure_registry
-id: b0d58855-d455-4155-9436-7c2099a3f5d4
+id: 231e38f8-94dd-4422-8fd2-b33f3b657650
 system: telegram-bot
-failure_type: integration
+failure_type: infrastructure
 severity: high
 status: resolved
-created: 2026-06-11T15:39:32.072640+00:00
+created: 2026-06-11T15:45:33.871636+00:00
 ---
 
-# ❌ telegram-bot — integration
+# ❌ telegram-bot — infrastructure
 
 ## Metadata
 
 | Field | Value |
 |---|---|
-| ID | `b0d58855-d455-4155-9436-7c2099a3f5d4` |
+| ID | `231e38f8-94dd-4422-8fd2-b33f3b657650` |
 | System | telegram-bot |
-| Type | integration |
+| Type | infrastructure |
 | Severity | high |
-| Date | 2026-06-11T15:39:32.072640+00:00 |
+| Date | 2026-06-11T15:45:33.871636+00:00 |
 | Status | resolved |
-| Created | 2026-06-11T15:39:32.072640+00:00 |
+| Created | 2026-06-11T15:45:33.871636+00:00 |
 
 ## Symptom
 
-Two Hermes instances polling same Telegram bot token simultaneously
+Two Hermes instances polling same Telegram bot token simultaneously causing mutual message delivery failures
 
 ## Root Cause
 
-{"text": "Both host Hermes and Docker Hermes agent were configured with the same TELEGRAM_BOT_TOKEN. Telegram only allows one consumer per bot token. Both instances competed for updates, causing mutual polling conflicts and message delivery failures."}
+{"text": "Host Hermes and Docker Hermes both configured with same TELEGRAM_BOT_TOKEN"}
 
 ## Evidence
 
@@ -39,19 +39,19 @@ Two Hermes instances polling same Telegram bot token simultaneously
 
 ## Fix Applied
 
-Commented TELEGRAM_BOT_TOKEN, TELEGRAM_ALLOWED_USERS, TELEGRAM_HOME_CHANNEL in Docker agent .env file. Host Hermes remains sole Telegram consumer.
+Commented TELEGRAM_BOT_TOKEN in Docker agent .env file
 
 ## Verification
 
-Verified: Docker agent no longer polls Telegram. Host Hermes sole consumer confirmed via gateway logs.
+Verified Docker agent no longer polls Telegram. Host Hermes sole consumer confirmed.
 
 ## Preventive Rule
 
-Never configure two Hermes instances with the same Telegram bot token. One bot [REDACTED] active consumer.
+One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.
 
 ## Source
 
 - Database: `knowledge_os`
 - Schema: `failure`
 - Table: `failure_registry`
-- Row: `b0d58855-d455-4155-9436-7c2099a3f5d4`
+- Row: `231e38f8-94dd-4422-8fd2-b33f3b657650`

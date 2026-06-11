@@ -1,35 +1,35 @@
 ---
 schema: failure
 table: failure_registry
-id: 9b32e356-b4bc-40ad-b657-92fa8404486a
+id: b679752c-cff8-4315-b38c-a741626055bf
 system: knowledge-os-postgres
-failure_type: application
+failure_type: infrastructure
 severity: high
 status: resolved
-created: 2026-06-11T15:43:07.419398+00:00
+created: 2026-06-11T15:45:43.500222+00:00
 ---
 
-# ❌ knowledge-os-postgres — application
+# ❌ knowledge-os-postgres — infrastructure
 
 ## Metadata
 
 | Field | Value |
 |---|---|
-| ID | `9b32e356-b4bc-40ad-b657-92fa8404486a` |
+| ID | `b679752c-cff8-4315-b38c-a741626055bf` |
 | System | knowledge-os-postgres |
-| Type | application |
+| Type | infrastructure |
 | Severity | high |
-| Date | 2026-06-11T15:43:07.419398+00:00 |
+| Date | 2026-06-11T15:45:43.500222+00:00 |
 | Status | resolved |
-| Created | 2026-06-11T15:43:07.419398+00:00 |
+| Created | 2026-06-11T15:45:43.500222+00:00 |
 
 ## Symptom
 
-PostgreSQL container on default bridge network unreachable from Hermes container on hermes-workspace_default network. Docker firewall blocks cross-network TCP.
+PostgreSQL container unreachable from Hermes container due to Docker bridge network isolation
 
 ## Root Cause
 
-{"text": "PostgreSQL container on default bridge network unreachable from Hermes container on hermes-workspace_default network. Docker firewall blocks cross-network TCP."}
+{"text": "PostgreSQL on default bridge network, Hermes on hermes-workspace_default. Docker firewall blocks cross-network TCP."}
 
 ## Evidence
 
@@ -43,7 +43,7 @@ Connected PostgreSQL container to hermes-workspace_default via docker network co
 
 ## Verification
 
-
+TCP connect to knowledge-os-postgres:5432 returns success from Hermes container
 
 ## Preventive Rule
 
@@ -54,4 +54,4 @@ Always declare shared networks in docker-compose.yml for inter-container communi
 - Database: `knowledge_os`
 - Schema: `failure`
 - Table: `failure_registry`
-- Row: `9b32e356-b4bc-40ad-b657-92fa8404486a`
+- Row: `b679752c-cff8-4315-b38c-a741626055bf`

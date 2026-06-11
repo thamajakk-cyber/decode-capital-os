@@ -1,10 +1,10 @@
 ---
 schema: lesson
 table: lesson_registry
-id: 7307933c-4e34-4991-bfc9-8304a8d0afb9
+id: 5109e76a-1213-4e2c-ae09-4b0c19a2bf4d
 title: Telegram Single Consumer Rule
 lesson_type: operational
-created: 2026-06-11T15:39:32.179853+00:00
+created: 2026-06-11T15:45:33.879245+00:00
 ---
 
 # 📖 Telegram Single Consumer Rule
@@ -13,30 +13,27 @@ created: 2026-06-11T15:39:32.179853+00:00
 
 | Field | Value |
 |---|---|
-| ID | `7307933c-4e34-4991-bfc9-8304a8d0afb9` |
+| ID | `5109e76a-1213-4e2c-ae09-4b0c19a2bf4d` |
 | Title | Telegram Single Consumer Rule |
 | Type | operational |
 | Date | 2026-06-11 |
 | Confidence | 1.00 |
-| Related Failure | `b0d58855-d455-4155-9436-7c2099a3f5d4` |
+| Related Failure | `231e38f8-94dd-4422-8fd2-b33f3b657650` |
 | Related Decision | `None` |
-| Created | 2026-06-11T15:39:32.179853+00:00 |
+| Created | 2026-06-11T15:45:33.879245+00:00 |
 
 ## Summary
 
-One bot token must have exactly one active consumer at all times
+One Telegram bot [REDACTED] active consumer. Verify token uniqueness before deploying.
 
 ## Key Takeaways
 
 ```json
 {
-  "rule": "One Telegram bot token = One active consumer",
-  "checklist": [
-    "Check .env files",
-    "Check docker-compose.yml",
-    "Check systemd services"
-  ],
-  "prevention": "Before starting any Hermes instance, verify no other instance uses the same token"
+  "root_cause": "Host Hermes and Docker Hermes both configured with same TELEGRAM_BOT_TOKEN",
+  "fix_applied": "Commented TELEGRAM_BOT_TOKEN in Docker agent .env file",
+  "verification": "Verified Docker agent no longer polls Telegram. Host Hermes sole consumer confirmed.",
+  "preventive_rule": "One Telegram bot token = One active consumer. Verify token uniqueness before deploying."
 }
 ```
 
@@ -45,4 +42,4 @@ One bot token must have exactly one active consumer at all times
 - Database: `knowledge_os`
 - Schema: `lesson`
 - Table: `lesson_registry`
-- Row: `7307933c-4e34-4991-bfc9-8304a8d0afb9`
+- Row: `5109e76a-1213-4e2c-ae09-4b0c19a2bf4d`
