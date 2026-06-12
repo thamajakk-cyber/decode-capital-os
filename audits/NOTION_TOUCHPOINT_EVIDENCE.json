@@ -1,0 +1,59 @@
+{
+  "parent_id": "37c3138a-e0c4-80fd-a1ea-dd6c8c43ebc7",
+  "evidence": {
+    "token_source_verified": true,
+    "token_not_printed": true,
+    "token_prefix": "ntn_1321...z3Wg",
+    "token_length_chars": 50,
+    "parent_page_access": {
+      "response_code": 401,
+      "error": "{\"object\":\"error\",\"status\":401,\"code\":\"unauthorized\",\"message\":\"API token is invalid.\",\"request_id\":\"c8eceaf6-a288-44df-84f5-9170dbffa37e\"}"
+    },
+    "database_parent_match": {
+      "smc contexts": {
+        "parent_match": false,
+        "database_id": null,
+        "parent_id": null
+      },
+      "market structure": {
+        "parent_match": false,
+        "database_id": null,
+        "parent_id": null
+      },
+      "liquidity registry": {
+        "parent_match": false,
+        "database_id": null,
+        "parent_id": null
+      },
+      "decision overlay": {
+        "parent_match": false,
+        "database_id": null,
+        "parent_id": null
+      }
+    },
+    "count_match": {
+      "smc contexts": {
+        "postgres_count": null,
+        "notion_count": null,
+        "match": false
+      },
+      "market structure": {
+        "postgres_count": null,
+        "notion_count": null,
+        "match": false
+      },
+      "liquidity registry": {
+        "postgres_count": null,
+        "notion_count": null,
+        "match": false
+      },
+      "decision overlay": {
+        "postgres_count": null,
+        "notion_count": null,
+        "match": false
+      }
+    },
+    "sanitized_evidence_file": "/root/decode-capital-os/audits/NOTION_TOUCHPOINT_EVIDENCE.json",
+    "status": "BLOCKED"
+  }
+}
